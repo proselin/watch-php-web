@@ -1,0 +1,219 @@
+* {
+margin:0;
+  padding:0;
+  
+}
+
+body {
+  font-family: cursive;
+  padding: 10px;
+  background: black;
+  border-radius: 05px;
+}
+
+/* Header/Blog Title */
+.header {
+  padding: 30px;
+  text-align: center;
+  background: black;
+  position: fixed;
+}
+.header h1 {
+  font-size: 50px;
+  color: #C8A157;
+  font-family:serif;
+  float: right;
+
+}
+
+
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color: #24241f;
+   border-radius: 05px;
+
+}
+
+/* Style the topnav links */
+.topnav a {
+  float: left;
+  display: inline-block;
+  color: #cfcc46;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  border-radius: 05px;
+
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  background-color: #C8A157;
+  color: black;
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {   
+  float: left;
+  width: 70%;
+}
+
+/* Right column */
+.rightcolumn {
+  float: right;
+  width: 20%;
+  background-color: #f1f1f1;
+  padding-left: 0px;
+}
+
+/* Fake image */
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+  border-radius: 05px;
+}
+.product-image{
+  max-width: 100%;
+  padding:10px;
+  border-radius: 05px;
+  margin-top: 10px;
+}
+
+.product-image img{
+  max-width:100%;
+  height:auto;
+  max-height: 200px;
+  margin-top: 10px;
+}
+
+.single-product{
+  text-align: center;
+  border-radius: 05px;
+
+    margin-top: 50px;
+     box-sizing: border-box;
+      padding: 1px;
+  
+}
+
+
+/* Add a card effect for articles */
+.card {
+  background-color: black;
+  padding: 20px;
+  margin-top: 20px;
+
+}
+
+.product{
+    background-color: #3333;
+    padding: 10px;
+    margin: 5px;
+    width: 28%;
+    float: left;
+    height:300px;
+    overflow: hidden;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 05px;
+
+}
+.product-price{
+  color:red;
+font-family: cursive;
+
+}
+
+.product-title{
+  font-size:30px;
+  margin:0px;
+  color: #C8A157;
+  font-family: cursive;
+
+}
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: black;
+  margin-top: 20px;
+  color:  #C8A157;
+}
+
+
+/*phan trang*/
+.pagination-wrap {
+    text-align: center;
+    width: 100%;
+    float: left;
+    display: block;
+
+}
+
+.pagination {
+  display: inline-block;
+}
+
+.pagination a {
+  color: black;
+  float: left;
+  padding: 8px 16px;
+  text-decoration: none;
+  transition: background-color .3s;
+  border: 1px solid #ddd;
+  margin: 0 4px;
+}
+
+.pagination a.active {
+  background-color: #4CAF50;
+  color: white;
+  border: 1px solid #4CAF50;
+}
+
+.pagination a:hover:not(.active) {background-color: #ddd;}
+/*END phan trang */
+
+
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and ( max-width: 800px ) {
+
+/*section => khi nao man hinh width <= 800px => thi doan code trong day se dc chay */
+.leftcolumn , .rightcolumn{
+  width: 100% ;
+}
+
+.product{
+  width: 42%;
+}
+
+.search{
+  border: 1px;
+  border-radius: 05px;
+  padding: 8px 15px 8px 15px;
+  
+}
+.button{
+  border-radius: 05px;
+  color: #c49d2f;
+  background-color: #24241f;
+}
+.button: hover{
+  color: back;
+  background-color: #c49d2f;
+}
+.product-content{
+  color:#C8A157 ;
+  font-family: cursive;
+
+}

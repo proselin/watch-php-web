@@ -1,0 +1,16 @@
+#total {
+width: 100%;
+background-color: gray	;
+display: block;
+float: none;
+text-align: center;
+border:1px solid white;
+ border-radius:05px; 
+}
+.clearfix{
+	overflow: auto;
+}
+.title{
+	padding top: 25px;
+	padding bottom: 25px;
+}
